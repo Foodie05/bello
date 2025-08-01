@@ -1,0 +1,20 @@
+import 'package:isar/isar.dart';
+import '../router_func/account/account.dart';
+
+dynamic webAddress='0.0.0.0';
+const int webPort=8080;
+const String webHomeDir='/bello/';
+final String webKeyDir='${webHomeDir}key/';
+final String webArticleDir='${webHomeDir}article/';
+final String webCertificateChain='${webKeyDir}fullchain.pem';
+final String webCertificatePrivateKey='${webKeyDir}privkey.pem';
+final String webDownloadDirectory='${webHomeDir}download/';
+final String webVisitDirectory='${webHomeDir}visit/';
+final String webAccountDirectory='${webHomeDir}account/';
+final String webAccountIsarName='accounts';
+final String webArticleIsarName='articles';
+final String webArticleLabels='labels';
+late Isar account;
+late Isar article;
+const String belloVersion='0.0.1';
+const int belloVersionNumber=1;
